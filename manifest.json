@@ -1,0 +1,32 @@
+{
+  "name": "External API Trigger",
+  "description": "Trigger an external API when something happens",
+  "version": "1.0",
+  "manifest_version": 3,
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Drink Water Event",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "N3RDING-circle.png",
+    "32": "N3RDING-circle.png",
+    "48": "N3RDING-circle.png",
+    "128": "N3RDING-circle.png"
+  }
+}
